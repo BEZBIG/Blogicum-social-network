@@ -65,4 +65,4 @@ pytest
       └── requirements.txt   # Зависимости проекта
 ```
 ## Результат тестирования
-![]()
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/test_results.png)
