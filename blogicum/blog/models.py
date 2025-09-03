@@ -40,7 +40,7 @@ class Post(PublishedModel):
     def __str__(self):
         return self.title
     
-class Category(models.Model):
+class Category(PublishedModel):
     title = models.CharField('Название', max_length=256)
     description = models.TextField('Описание')
     slug = models.SlugField('Слаг', unique=True)
@@ -52,7 +52,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
     
-class Location(models.Model):
+class Location(PublishedModel):
     name = models.CharField('Название', max_length=256)
 
     class Meta:
