@@ -41,8 +41,9 @@ class Post(PublishedModel):
         return self.title
     
 class Category(models.Model):
-    name = models.CharField('Название', max_length=100)
-    slug = models.SlugField('Слаг', max_length=50, unique=True)
+    title = models.CharField('Название', max_length=256)
+    description = models.TextField('Описание')
+    slug = models.SlugField('Слаг', unique=True)
 
     class Meta:
         verbose_name = 'категория'
