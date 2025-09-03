@@ -53,9 +53,7 @@ class Category(models.Model):
         return self.name
     
 class Location(models.Model):
-    name = models.CharField('Название', max_length=100)
-    latitude = models.FloatField('Широта')
-    longitude = models.FloatField('Долгота')
+    name = models.CharField('Название', max_length=256)
 
     class Meta:
         verbose_name = 'локация'
