@@ -109,11 +109,11 @@ pytest
       └── requirements.txt   # Зависимости проекта
 ```
 ## Результат работы
-![](https://github.com/BEZBIG/Blogicum-social-network/pictures/main_page.png)
-![](https://github.com/BEZBIG/Blogicum-social-network/pictures/about_page.png)
-![](https://github.com/BEZBIG/Blogicum-social-network/pictures/rules_page.png)
-![](https://github.com/BEZBIG/Blogicum-social-network/pictures/post_page.png)
-![](https://github.com/BEZBIG/Blogicum-social-network/pictures/category_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/pictures/main_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/pictures/about_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/pictures/rules_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/pictures/post_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/pictures/category_page.png)
 
 ## Результат тестирования
-![](https://github.com/BEZBIG/Blogicum-social-network/pictures/test_results.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/pictures/test_results.png)
