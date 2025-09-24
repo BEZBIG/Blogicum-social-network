@@ -108,5 +108,12 @@ pytest
       ├── README.md          # Описание проекта
       └── requirements.txt   # Зависимости проекта
 ```
+## Результат работы
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/main_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/about_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/rules_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/post_page.png)
+![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/category_page.png)
+
 ## Результат тестирования
 ![](https://github.com/BEZBIG/Blogicum-social-network/blob/main/test_results.png)
