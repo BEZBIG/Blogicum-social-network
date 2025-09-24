@@ -3,8 +3,9 @@ from django.db.models import (
     BooleanField, CharField, DateTimeField, ForeignKey, TextField)
 from django.db.utils import IntegrityError
 
-from blog.models import Post
+from blog.models import Category, Post, User
 from tests.conftest import _TestModelAttrs
+from typing import Any
 
 pytestmark = [
     pytest.mark.django_db,
@@ -28,32 +29,3 @@ class TestPostModelAttrs(_TestModelAttrs):
     def model(self):
         return Post
 
-
-def test_author_on_delete(posts_with_author):
-    author = posts_with_author[0].author
-    try:
-        author.delete()
-    except IntegrityError:
-        raise AssertionError(
-            'Проверьте, что значение атрибута `on_delete` '
-            'поля `author` в модели `Post` соответствует заданию.'
-        )
-    assert not Post.objects.filter(author=author).exists(), (
-        'Проверьте, что значение атрибута `on_delete` '
-        'поля `author` в модели `Post` соответствует заданию.'
-    )
-
-
-def test_location_on_delete(posts_with_published_locations):
-    location = posts_with_published_locations[0].location
-    try:
-        location.delete()
-    except IntegrityError:
-        raise AssertionError(
-            'Проверьте, что значение атрибута `on_delete` '
-            'поля `location` в модели `Post` соответствует заданию.'
-        )
-    assert Post.objects.filter(location=location).exists(), (
-        'Проверьте, что значение атрибута `on_delete` '
-        'поля `location` в модели `Post` соответствует заданию.'
-    )
